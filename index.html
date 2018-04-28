@@ -27,16 +27,12 @@
 				var b = 1;
 			}
 			function DOG() {
-				while(true){
-					if (a == 0){
-						document.getElementsByTagName("body")[0].style.backgroundColor = 'red';
-						a = 1;
-						setTimeout(c(), 100);
-					} else{
-						document.getElementsByTagName("body")[0].style.backgroundColor = 'blue';
-						a = 0;
-						setTimeout(c(), 100);
-					}
+				if (a == 0){
+					document.getElementsByTagName("body")[0].style.backgroundColor = 'red';
+					a = 1;
+				} else{
+					document.getElementsByTagName("body")[0].style.backgroundColor = 'blue';
+					a = 0;
 				}
 			}
 		</script>
