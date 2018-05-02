@@ -21,6 +21,7 @@
 		DUND DDUDND UDN DUN DUN DUN!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		UNTIL SILLY
 		<button onclick = "DOG()">COLORS</button>
+		<p>You have been here <span id = "Times"></span> times</p>
 		<script>
 			var a = 0;
 			function c(){
@@ -37,6 +38,7 @@
 			}
 			localStorage.setItem("times", 0);
 			localStorage.setItem("times", localStorage.getItem("times") + 1);
+			document.getElementById("Times").innerHTML = localStorage.getItem("times");
 		</script>
 	</body>
 </html>
