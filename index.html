@@ -29,6 +29,7 @@
 			}
 			function DOG() {
 				localStorage.setItem("times", localStorage.getItem("times") + 1);
+				document.getElementById("Times").innerHTML = localStorage.getItem("times");
 				if (a == 0){
 					document.getElementsByTagName("body")[0].style.backgroundColor = 'red';
 					a = 1;
@@ -38,8 +39,6 @@
 				}
 			}
 			localStorage.setItem("times", 0);
-			localStorage.setItem("times", localStorage.getItem("times") + 1);
-			document.getElementById("Times").innerHTML = localStorage.getItem("times");
 		</script>
 	</body>
 </html>
